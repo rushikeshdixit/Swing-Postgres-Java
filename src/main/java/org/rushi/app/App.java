@@ -131,9 +131,8 @@ public class App  implements ActionListener
 
             Class.forName("org.postgresql.Driver");
 
-            connection = DriverManager.getConnection(
-                    "jdbc:postgresql://127.0.0.1:5433/postgres", "postgres",
-                    "tiger");
+
+            connection = DriverManager.getConnection(<Endpoint>,<username>,<password>);
             connection.setSchema("employee");
             System.out.println("Connection Successfull");
 
